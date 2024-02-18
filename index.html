@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mq.css">
+
+</head>
+<body onresize="mudouTaman()">
+    <header>
+        <h1>Meu site</h1>
+        <i id="menuIco" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <menu id="menu">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Teste</h2>
+            <p>
+                menu Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quo asperiores assumenda natus nam illo eveniet optio corporis perspiciatis ut obcaecati quibusdam repellendus cumque veritatis illum provident porro voluptate aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non incidunt, voluptatem repudiandae sit quisquam delectus? Illo sunt doloribus cum. Nihil, necessitatibus dolorum. Iusto odio quisquam enim, voluptas rerum dignissimos doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem dolores cumque? Rem delectus perferendis laboriosam natus velit, porro excepturi iste magnam tempora quae debitis itaque laborum eveniet consequuntur cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti distinctio mollitia aliquid explicabo? Eos corrupti doloribus ratione repudiandae commodi, iste incidunt sint cum at adipisci possimus eveniet dolorem iure rerum!
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quo asperiores assumenda natus nam illo eveniet optio corporis perspiciatis ut obcaecati quibusdam repellendus cumque veritatis illum provident porro voluptate aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non incidunt, voluptatem repudiandae sit quisquam delectus? Illo sunt doloribus cum. Nihil, necessitatibus dolorum. Iusto odio quisquam enim, voluptas rerum dignissimos doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem dolores cumque? Rem delectus perferendis laboriosam natus velit, porro excepturi iste magnam tempora quae debitis itaque laborum eveniet consequuntur cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti distinctio mollitia aliquid explicabo? Eos corrupti doloribus ratione repudiandae commodi, iste incidunt sint cum at adipisci possimus eveniet dolorem iure rerum!
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, quo asperiores assumenda natus nam illo eveniet optio corporis perspiciatis ut obcaecati quibusdam repellendus cumque veritatis illum provident porro voluptate aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non incidunt, voluptatem repudiandae sit quisquam delectus? Illo sunt doloribus cum. Nihil, necessitatibus dolorum. Iusto odio quisquam enim, voluptas rerum dignissimos doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem dolores cumque? Rem delectus perferendis laboriosam natus velit, porro excepturi iste magnam tempora quae debitis itaque laborum eveniet consequuntur cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti distinctio mollitia aliquid explicabo? Eos corrupti doloribus ratione repudiandae commodi, iste incidunt sint cum at adipisci possimus eveniet dolorem iure rerum!
+            </p>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if (menu.style.display == 'block'){
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+        function mudouTaman(){
+            if (window.innerWidth >= 998){
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
